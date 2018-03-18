@@ -17,7 +17,7 @@ export class ImportCompanyComponent implements OnInit {
   }
 
   importCompanies() {
-    this._igdbImportService.get('companies').subscribe( data => {
+    this._igdbImportService.getAll('companies').subscribe( data => {
       console.log(data);
     });
   }
