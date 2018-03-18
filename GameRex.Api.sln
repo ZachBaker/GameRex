@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRex.Api", "GameRex.Api\GameRex.Api.csproj", "{7894B11F-ABAD-4572-B832-78580182E71E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRex.Data.Access", "GameRex.Data.Access\GameRex.Data.Access.csproj", "{3C037E81-4731-4369-8DA8-E7850AE2C54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRex.Applicaton.Logic", "GameRex.Applicaton.Logic\GameRex.Applicaton.Logic.csproj", "{FB8ED420-A070-4F10-B854-B49428F72D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7894B11F-ABAD-4572-B832-78580182E71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7894B11F-ABAD-4572-B832-78580182E71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7894B11F-ABAD-4572-B832-78580182E71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7894B11F-ABAD-4572-B832-78580182E71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8ED420-A070-4F10-B854-B49428F72D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8ED420-A070-4F10-B854-B49428F72D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8ED420-A070-4F10-B854-B49428F72D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8ED420-A070-4F10-B854-B49428F72D71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DD7DCC8-B2CC-47FF-95C2-60AE86C8DE15}
+	EndGlobalSection
+EndGlobal
