@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using GameRex.Applicaton.Logic.Platform;
 using MediatR;
+using System.Threading;
 
 namespace GameRex.Api.Controllers
 {
@@ -15,7 +16,7 @@ namespace GameRex.Api.Controllers
 
         public PlatformController(IMediator mediator)
         {
-            this._mediator = mediator;
+            _mediator = mediator;
         }
 
         // GET api/platform/5
@@ -29,8 +30,9 @@ namespace GameRex.Api.Controllers
 
         // POST api/platform
         [HttpPost]
-        public async Task<ICollection<PlatFormDto>> Post(AddPlatformsCommand command)
+        public async Task<ICollection<PlatFormDto>> Post([FromBody] AddPlatformsCommand command)
         {
+            return new List<PlatFormDto>();
             return await _mediator.Send(command);
         }
     }

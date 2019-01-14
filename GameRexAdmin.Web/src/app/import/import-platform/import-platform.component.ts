@@ -2,6 +2,7 @@ import { Component, OnInit, Injectable } from '@angular/core';
 import { GiantBombApiImportService } from '../shared/services/giant-bomb-api-import.service';
 import { HttpService } from '../../core/services/http-service.service';
 import { Platform } from '../shared/models/platform';
+import { Platforms } from '../shared/models/platforms';
 
 @Component({
   selector: 'app-import-platform',
@@ -28,7 +29,8 @@ export class ImportPlatformComponent implements OnInit {
     this._giantBombImportService.getAll('platforms', this.platForms).subscribe(data => {
       console.log(data);
 
-      const platforms: Platform[] = data;
+      const platforms = new Platforms();
+      platforms.platforms = data;
 
       console.log(platforms);
 
