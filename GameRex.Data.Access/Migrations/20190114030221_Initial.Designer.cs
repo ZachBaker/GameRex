@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 namespace GameRex.Data.Access.Migrations
 {
     [DbContext(typeof(GameRexContext))]
-    [Migration("20180313025729_AddCompany")]
-    partial class AddCompany
+    [Migration("20190114030221_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,7 +27,7 @@ namespace GameRex.Data.Access.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("GB_GUID");
+                    b.Property<string>("ExternalId");
 
                     b.Property<string>("Name");
 
@@ -53,9 +53,15 @@ namespace GameRex.Data.Access.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<string>("GB_GUID");
+                    b.Property<string>("ExternalId");
+
+                    b.Property<int>("InstallBase");
 
                     b.Property<string>("Name");
+
+                    b.Property<DateTime>("ReleaseDate");
+
+                    b.Property<string>("SiteDetailIUrl");
 
                     b.HasKey("Id");
 

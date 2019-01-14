@@ -18,7 +18,7 @@ namespace GameRex.Api.Controllers
             this._mediator = mediator;
         }
 
-        // GET api/platofrm/5
+        // GET api/platform/5
         [HttpGet("{id}")]
         public async Task<string> Get()
         {
@@ -26,10 +26,12 @@ namespace GameRex.Api.Controllers
             //return await _mediator.Send(command);
         }
 
+
         // POST api/platform
         [HttpPost]
-        public void Post(AddPlatformCommand command)
+        public async Task<ICollection<PlatFormDto>> Post(AddPlatformsCommand command)
         {
+            return await _mediator.Send(command);
         }
     }
 }

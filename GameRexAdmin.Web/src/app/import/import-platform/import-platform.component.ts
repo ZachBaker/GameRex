@@ -1,5 +1,7 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { GiantBombApiImportService } from '../shared/services/giant-bomb-api-import.service';
+import { HttpService } from '../../core/services/http-service.service';
+import { Platform } from '../shared/models/platform';
 
 @Component({
   selector: 'app-import-platform',
@@ -13,7 +15,8 @@ export class ImportPlatformComponent implements OnInit {
   private platForms: [{key, value}] =
     [{key: 'id', value: ['19']}];
 
-  constructor(private _giantBombImportService: GiantBombApiImportService) {
+  constructor(private _giantBombImportService: GiantBombApiImportService,
+              private _httpService: HttpService) {
    }
 
   ngOnInit() {
@@ -21,12 +24,16 @@ export class ImportPlatformComponent implements OnInit {
   }
 
   importPlatforms() {
-  //   this._giantBombImportService.getAll('platforms', this.platForms).subscribe(data => {
-  //     console.log(data);
-  //   });
 
     this._giantBombImportService.getAll('platforms', this.platForms).subscribe(data => {
       console.log(data);
+
+      const platforms: Platform[] = data;
+
+      console.log(platforms);
+
+      this._httpService.post('platform', platforms);
+
     });
   }
 }

@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace GameRex.Applicaton.Logic.Platform
 {
-    public class AddPlatformCommandHandler : IRequestHandler<AddPlatformCommand, string>
+    public class AddPlatformsCommandHandler : IRequestHandler<AddPlatformsCommand, ICollection<PlatFormDto>>
     {
-        AddPlatformCommandHandler(GameRexContext context)
+        AddPlatformsCommandHandler(GameRexContext context)
         {
             var gg = context.Set<Data.Access.Entities.Platform>();
         }
 
-        public async Task<string> Handle(AddPlatformCommand request, CancellationToken cancellationToken)
+        public async Task<ICollection<PlatFormDto>> Handle(AddPlatformsCommand request, CancellationToken cancellationToken)
         {
-            return "Heawdawdo";
+            return new List<PlatFormDto>();
         }
     }
 }

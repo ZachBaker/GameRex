@@ -14,10 +14,11 @@ export class ImportCompanyComponent implements OnInit {
   private _igdbImportService: IgdbApiImportService) { }
 
   ngOnInit() {
+    this.importCompanies();
   }
 
   importCompanies() {
-    this._igdbImportService.getAll('companies').subscribe( data => {
+    this._giantBombImportService.getAll('companies').subscribe( data => {
       console.log(data);
     });
   }

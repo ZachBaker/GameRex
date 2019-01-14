@@ -4,7 +4,6 @@ import { } from 'rxjs/Observable/of';
 import { Observable } from 'rxjs/Observable';
 import { SleepService } from '../../../core/services/sleep.service';
 import { Subject } from 'rxjs/Subject';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class GiantBombApiImportService {
@@ -45,7 +44,7 @@ export class GiantBombApiImportService {
 
     this._http.jsonp(request, 'callback').subscribe(data => {
 
-      console.log(`Got reaults ${offset} to ${offset + data['number_of_page_results']} out of ${data['number_of_total_results']}`);
+      console.log(`Got results ${offset} to ${offset + data['number_of_page_results']} out of ${data['number_of_total_results']}`);
 
       offset += +data['number_of_page_results'];
 

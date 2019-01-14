@@ -26,7 +26,7 @@ namespace GameRex.Data.Access.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("GB_GUID");
+                    b.Property<string>("ExternalId");
 
                     b.Property<string>("Name");
 
@@ -52,9 +52,15 @@ namespace GameRex.Data.Access.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<string>("GB_GUID");
+                    b.Property<string>("ExternalId");
+
+                    b.Property<int>("InstallBase");
 
                     b.Property<string>("Name");
+
+                    b.Property<DateTime>("ReleaseDate");
+
+                    b.Property<string>("SiteDetailIUrl");
 
                     b.HasKey("Id");
 

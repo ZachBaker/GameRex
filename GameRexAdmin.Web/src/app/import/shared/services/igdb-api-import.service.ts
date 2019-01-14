@@ -23,7 +23,7 @@ export class IgdbApiImportService {
 
     // const request = this.buildRequest(resource, 1);
 
-    // return this._http.get(request, {headers: this.headers});  
+    // return this._http.get(request, {headers: this.headers});
   }
 
   getAll(resource: string): Observable<any> {

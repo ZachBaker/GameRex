@@ -5,7 +5,8 @@ using System.Text;
 
 namespace GameRex.Applicaton.Logic.Platform
 {
-    public class AddPlatformCommand : IRequest<string>
+    public class AddPlatformsCommand : IRequest<ICollection<PlatFormDto>>
     {
+        public ICollection<PlatFormDto> Platforms { get; set; }
     }
 }

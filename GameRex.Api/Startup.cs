@@ -21,7 +21,8 @@ namespace GameRex.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
-            services.AddMediatR(typeof(AddPlatformCommandHandler).Assembly);
+            services.AddMediatR(typeof(AddPlatformsCommandHandler).Assembly);
+            services.AddCors();
             services.AddMvc();
         }
 
@@ -32,6 +33,13 @@ namespace GameRex.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder =>
+                {
+                    builder.AllowAnyOrigin()
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+                });
 
             app.UseMvc();
         }

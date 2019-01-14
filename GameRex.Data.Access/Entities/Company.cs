@@ -10,7 +10,7 @@ namespace GameRex.Data.Access.Entities
         [Key]
         public int Id { get; set; }
 
-        public string GB_GUID { get; set; }
+        public string ExternalId { get; set; }
 
         public string Name { get; set; }
 
