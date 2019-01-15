@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { } from 'rxjs/Observable/of';
-import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 import { SleepService } from '../../../core/services/sleep.service';
-import { Subject } from 'rxjs/Subject';
+import { Subject, Observable } from 'rxjs';
 
 @Injectable()
 export class GiantBombApiImportService {

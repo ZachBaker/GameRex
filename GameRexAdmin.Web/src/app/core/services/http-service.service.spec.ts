@@ -1,6 +1,6 @@
 import { TestBed, inject } from '@angular/core/testing';
-
-import { HttpServiceService } from './http-service.service';
+import { HttpService } from './http-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('HttpServiceService', () => {
   beforeEach(() => {
@@ -9,7 +9,7 @@ describe('HttpServiceService', () => {
     });
   });
 
-  it('should be created', inject([HttpServiceService], (service: HttpServiceService) => {
+  it('should be created', inject([HttpServiceService], (service: HttpClientModule) => {
     expect(service).toBeTruthy();
   }));
 });
