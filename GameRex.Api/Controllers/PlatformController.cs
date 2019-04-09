@@ -1,11 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GameRex.Applicaton.Logic.Platform;
+﻿using GameRex.Applicaton.Logic.Platform;
 using MediatR;
-using System.Threading;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace GameRex.Api.Controllers
 {
@@ -26,7 +23,6 @@ namespace GameRex.Api.Controllers
             return "sdf";
             //return await _mediator.Send(command);
         }
-
 
         // POST api/platform
         [HttpPost]

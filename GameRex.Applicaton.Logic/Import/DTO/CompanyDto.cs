@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GameRex.Applicaton.Logic.Company
+﻿namespace GameRex.Applicaton.Logic.Company
 {
     public class CompanyDto
     {

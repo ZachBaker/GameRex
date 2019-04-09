@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using GameRex.Applicaton.Logic.Platform;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MediatR;
 
 namespace GameRex.Api
 {
