@@ -287,3 +287,4 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 GameRexAdmin.Web/package-lock.json
+GameRex.Web/package-lock.json
