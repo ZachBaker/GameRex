@@ -1,10 +1,10 @@
-﻿using GameRex.Data.Access.Entities;
+﻿using GameRex.GiantBomb.Data.Access.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace GameRex.Data.Access
+namespace GameRex.GiantBomb.Data.Access
 {
     public class GameRexContext : DbContext
     {
@@ -15,7 +15,7 @@ namespace GameRex.Data.Access
         public DbSet<Company> Companies { get; set; }
 
         public DbSet<Game> Games { get; set; }
-
+        
         public DbSet<Platform> Platforms { get; set; }
 
         public DbSet<UserReview> UserReviews { get; set; }

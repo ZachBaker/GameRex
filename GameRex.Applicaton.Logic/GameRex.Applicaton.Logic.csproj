@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameRex.Data.Access\GameRex.GiantBomb.Data.Access.csproj" />
+    <ProjectReference Include="..\GameRex.GiantBomb.Data.Access\GameRex.GiantBomb.Data.Access.csproj" />
   </ItemGroup>
 
 </Project>

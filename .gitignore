@@ -286,5 +286,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-GameRexAdmin.Web/package-lock.json
-GameRex.Web/package-lock.json
+
+**/package-lock.json
+**/package-lock.json

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace GameRex.Data.Access.Entities
+namespace GameRex.GiantBomb.Data.Access.Entities
 {
     public class Company
     {

@@ -1,4 +1,4 @@
-﻿using GameRex.Data.Access;
+﻿using GameRex.GiantBomb.Data.Access;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
@@ -10,7 +10,7 @@ namespace GameRex.Applicaton.Logic.Platform
     {
         private AddPlatformsCommandHandler(GameRexContext context)
         {
-            var gg = context.Set<Data.Access.Entities.Platform>();
+            var gg = context.Set<GiantBomb.Data.Access.Entities.Platform>();
         }
 
         public async Task<ICollection<PlatFormDto>> Handle(AddPlatformsCommand request, CancellationToken cancellationToken)

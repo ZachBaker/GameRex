@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace GameRex.Data.Access.Entities
+namespace GameRex.GiantBomb.Data.Access.Entities
 {
     public class UserReview
     {

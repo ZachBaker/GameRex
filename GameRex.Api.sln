@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameRex.Api", "GameRex.Api\GameRex.Api.csproj", "{7894B11F-ABAD-4572-B832-78580182E71E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameRex.GiantBomb.Data.Access", "GameRex.Data.Access\GameRex.GiantBomb.Data.Access.csproj", "{3C037E81-4731-4369-8DA8-E7850AE2C54E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameRex.Applicaton.Logic", "GameRex.Applicaton.Logic\GameRex.Applicaton.Logic.csproj", "{FB8ED420-A070-4F10-B854-B49428F72D71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameRex.GiantBomb.Data.Access", "GameRex.GiantBomb.Data.Access\GameRex.GiantBomb.Data.Access.csproj", "{1CF68567-C75B-4E98-BEE1-6F9AA4903C14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{7894B11F-ABAD-4572-B832-78580182E71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7894B11F-ABAD-4572-B832-78580182E71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7894B11F-ABAD-4572-B832-78580182E71E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C037E81-4731-4369-8DA8-E7850AE2C54E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB8ED420-A070-4F10-B854-B49428F72D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB8ED420-A070-4F10-B854-B49428F72D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB8ED420-A070-4F10-B854-B49428F72D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB8ED420-A070-4F10-B854-B49428F72D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF68567-C75B-4E98-BEE1-6F9AA4903C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF68567-C75B-4E98-BEE1-6F9AA4903C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF68567-C75B-4E98-BEE1-6F9AA4903C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF68567-C75B-4E98-BEE1-6F9AA4903C14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
